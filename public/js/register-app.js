@@ -691,7 +691,8 @@
       '<label class="list-item switch"><input type="checkbox" id="m-pc"' + (pp.customer ? " checked" : "") + "><span>" + E(t("Print the customer receipt")) + "</span></label>" +
       (TYPE === "product" ? '<label class="list-item switch"><input type="checkbox" id="m-pk"' + (pp.kitchen ? " checked" : "") + "><span>" + E(t("Print a preparation copy")) + "</span></label>" : "") +
       "</div>" +
-      '<div class="row"><button class="btn" type="button" id="m-change">' + E(t("Change register")) + '</button><a class="btn" href="/index.html">' + E(t("Back to the office")) + "</a></div>");
+      '<div class="row"><button class="btn" type="button" id="m-change">' + E(t("Change register")) + '</button><a class="btn" href="/index.html">' + E(t("Back to the office")) + "</a></div>" +
+      '<p class="dev-credit"><a href="https://www.rubberduckstudio.nz/?utm_source=pos-smg&amp;utm_medium=referral&amp;utm_campaign=credit" target="_blank" rel="noopener">Developed by Rubber Duck Studio</a></p>');
     d.querySelector("#m-lock").onclick = () => { d.close(); lockNow(); };
     d.querySelector("#m-test").onchange = (e) => { S.test = e.target.checked; ss.set("pos_test_mode", S.test ? "1" : "0"); applyTest(); };
     const savePrint = () => ls.set("pos_print_" + S.reg.id, JSON.stringify({ customer: d.querySelector("#m-pc").checked, kitchen: d.querySelector("#m-pk") ? d.querySelector("#m-pk").checked : false }));
