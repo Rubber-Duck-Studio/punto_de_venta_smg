@@ -52,7 +52,8 @@
           icon(n.key) + '<span class="nav-label"></span></a>').join("") + "</nav>" +
         '<div class="side-action"><button class="btn btn-primary btn-block" id="office-open-register" type="button" data-i18n>Open a register</button></div>' +
         '<div class="side-foot"><span class="who" id="office-who"></span>' +
-          '<div class="row"><span id="office-lang"></span><button class="link" id="office-logout" type="button" data-i18n>Sign out</button></div></div>' +
+          '<div class="row"><span id="office-lang"></span><button class="link" id="office-logout" type="button" data-i18n>Sign out</button></div>' +
+          '<p class="dev-credit"><a href="https://www.rubberduckstudio.nz/?utm_source=pos-smg&amp;utm_medium=referral&amp;utm_campaign=credit" target="_blank" rel="noopener">Developed by Rubber Duck Studio</a></p></div>' +
       "</aside>" +
       '<div class="main">' +
         '<div class="topbar"><button type="button" id="office-menu" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>' +

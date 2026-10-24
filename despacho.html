@@ -253,7 +253,8 @@
 
   function openMenu() {
     const d = dlg(t("Delivery"), '<div class="list"><div class="list-item"><div class="grow"><b>' + E(reg.name) + '</b><div class="muted">' + E(operator) + "</div></div>" +
-      '<button class="btn btn-sm" type="button" id="m-lock">' + E(t("Switch person")) + '</button></div></div><div class="row"><button class="btn" type="button" id="m-change">' + E(t("Change register")) + '</button><a class="btn" href="/index.html">' + E(t("Back to the office")) + "</a></div>");
+      '<button class="btn btn-sm" type="button" id="m-lock">' + E(t("Switch person")) + '</button></div></div><div class="row"><button class="btn" type="button" id="m-change">' + E(t("Change register")) + '</button><a class="btn" href="/index.html">' + E(t("Back to the office")) + "</a></div>" +
+      '<p class="dev-credit"><a href="https://www.rubberduckstudio.nz/?utm_source=pos-smg&amp;utm_medium=referral&amp;utm_campaign=credit" target="_blank" rel="noopener">Developed by Rubber Duck Studio</a></p>');
     d.querySelector("#m-lock").onclick = () => { sessionStorage.removeItem("pos_despacho_pin_" + reg.id); d.close(); showLock(); };
     d.querySelector("#m-change").onclick = () => { try { localStorage.removeItem("pos_register_product"); } catch (_) { /* sin storage */ } location.reload(); };
   }
